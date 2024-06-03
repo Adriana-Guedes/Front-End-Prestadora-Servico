@@ -1,0 +1,129 @@
+@import "../../../../src/styles/variables.scss";
+
+main{
+  display: flex;
+  flex-direction: row; // um elmento ao lado do outro
+  align-items: center;
+  justify-content: center;
+  background-color:#050505;
+  height: 100%;
+
+
+
+
+//formatação geral das duas sections
+  section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+
+
+  }
+
+  //essa section é da imagem principal da esquerda
+  .main-section{
+    gap: 8px;
+    flex-grow: 1;
+    background-color: #050505;
+
+  }
+
+  .form-section{
+    flex-grow: 0.6;
+    padding: 0 35px;
+
+
+
+
+    .imglogo{
+
+      margin: 100px 0 30px 0;
+      height: 100px;
+    }
+
+
+
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .btn-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 30px;
+      margin: 30px ;
+
+
+
+      .divider{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        color: $secundary-color;
+        font-weight: 400;
+        text-transform: uppercase;
+
+      }
+
+
+      //traço do OR
+    .traco {
+        flex-grow: 1;
+        height: 1px;
+        background-color:  rgb(189, 180, 180);
+
+      }
+
+
+
+      button{
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        background: transparent;
+        padding: 12px 24px;
+        cursor: pointer;
+
+
+
+      &:disabled{
+        opacity: 0.5;
+      }
+
+
+       &.btn-primary{
+        background-color: $primary-color;
+        color: $text-color;
+        box-shadow: 0px 8px 12px rgba(31, 9, 6, 0.2);
+
+       }
+
+
+       &.btn-secondary{
+        border: 1px solid $primary-color;
+        color: $primary-color;
+       }
+
+
+      }
+    }
+
+
+
+
+
+  }
+}

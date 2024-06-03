@@ -1,0 +1,41 @@
+ <!--ESTRUTURA BASICA DO DEFAULT LOGIN LAYOUT-->
+
+<main>
+   <!--PARTE DO FORMULARIO-->
+  <section class="form-section">
+
+ <!--LOGO-->
+    <img class="imglogo" src="/assets/forms1.svg"   alt="logo">
+    <h2>{{ title }}</h2>
+
+    <!-- tudo o que estiver dentro do component login sera lançado aqui -->
+    <ng-content></ng-content>   <!--FORMULARIO-->
+
+
+    <div class="btn-wrapper"> <!--BOTÃO 1-->
+  <button
+       class="btn-primary"
+       (click)="submit()"
+       [disabled]="disablePrimaryBtn"
+       >{{primaryBtnText}}</button>
+
+  <div class="divider">
+    <div class="traco"></div> <!--formam os riscos do or-->
+    <span> OR </span>
+    <div  class="traco"></div>  <!--formam os riscos do or-->
+  </div>
+
+
+<!--BOTÃO 2-->
+  <button class="btn-secondary" (click)="navigate()" >{{secondaryBtnText}}</button>
+</div>
+  </section>
+
+
+
+  <section class="main-section"><
+    <!--PARTE DA IMAGEM-->
+
+    <img  class="img-fundo" src="/assets/logo.jpg" width="100%" alt="fundo">
+  </section>
+</main>

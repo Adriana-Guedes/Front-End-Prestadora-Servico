@@ -1,0 +1,62 @@
+<!--texto para o forms de login tudo que estiver entre a
+ta de app-default-login-layout será chamado lá no componente-->
+
+<app-default-login-layout
+  title="Crie sua conta ."
+  primaryBtnText="CRIAR CONTA"
+  secondaryBtnText="LOGIN AGORA"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disablePrimaryBtn]="!signupForm.valid">
+
+
+
+  <!--necessário chamar no default login com <ng-content>-->
+     <!--VALIDAÇÃO OCORRE NO LOGIN.COMPONENT.TS-->
+  <form [formGroup]="signupForm">
+
+    <!--importar o component do primary-input-->
+    <!--INPUT DA EMAIL-->
+    <app-primary-input
+      formControlName="nome"
+        inputName="nome"
+        type="text"
+        label="Seu nome"
+        placeholder="Joseh Doe">
+      <img src="/assets/email.png"/>
+    </app-primary-input>
+
+       <!--INPUT DA EMAIL-->
+       <app-primary-input
+       formControlName="email"
+         inputName="email"
+         type="email"
+         label="Email"
+         placeholder="email@email.com">
+       <img src="/assets/email.png"/>
+     </app-primary-input>
+
+     <!--INPUT DA SENHA-->
+    <app-primary-input
+     formControlName="senha"
+       inputName="senha"
+       type="password"
+        label="Sua Senha"
+       placeholder="**********">
+  <img src="/assets/senha2.png" width="30px"/>
+  </app-primary-input>
+
+    <!--CONFIRMAÇÃO DA SENHA-->
+    <app-primary-input
+     formControlName="senhaConfirm"
+       inputName="senhaConfirm"
+       type="password"
+        label="Confirme sua senha"
+       placeholder="**********">
+  <img src="/assets/senha2.png" width="30px"/>
+  </app-primary-input>
+
+</form>
+
+</app-default-login-layout>
+

@@ -1,0 +1,41 @@
+
+@import "../../../../src/styles/variables.scss";
+
+.input-wrapper{
+  color: $primary-color;
+  font-size: 16px;
+  text-align: start;// deixa o label bem no começo do input na esquerda
+
+
+
+.input-content{
+  width: 100%;
+   display: flex;
+
+
+
+  .icon{
+    padding: 5px ;
+    background-color: $primary-color;
+    border-radius: 8px;
+  }
+
+  img{
+        height: 20px;
+
+  }
+
+
+  input{
+    border: none;
+    background-color: rgb(54, 53, 53);
+    padding: 12px 0 12px 20px;
+    width: 100%;
+    color: $text-color;
+    border-radius: 5px;
+
+
+  }
+
+  }
+}
