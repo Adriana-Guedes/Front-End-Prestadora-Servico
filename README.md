@@ -8,7 +8,8 @@ Este projeto consiste em uma aplicação de autenticação de usuários.
 Ele possui um backend em Java que encontra-se no repositorio: https://github.com/Adriana-Guedes/Prestadora_Servicos, utilizando Spring Boot para criar a API com segurança integrada, e um frontend desenvolvido em Angular para permitir o login e cadastro de novos usuários.
 
 
-![1715624925926](https://github.com/user-attachments/assets/6dab0b5d-173d-4828-8c3b-222cd8ece45c)
+
+![1715624929160](https://github.com/user-attachments/assets/e28efc2f-c5b3-4753-8809-a6ba45c0322c)
 
 
 
